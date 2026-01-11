@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J.A Topografía y Construcción S.A.S.</title>
+  <style>
+    :root {
+      --primary: #f9b000;
+      --dark: #0f0f0f;
+      --gray: #1f1f1f;
+      --light: #f5f5f5;
+      --accent: #00c6ff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial; }
+
+    body { background: var(--dark); color: var(--light); line-height: 1.6; }
+
+    /* NAVBAR */
+    header {
+      background: linear-gradient(90deg, #000, var(--gray));
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 5px 20px rgba(0,0,0,.7);
+    }
+
+   .logo img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f9b000; /* color corporativo */
+  background: #fff;
+}
+
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover { color: var(--primary); }
+
+    /* HERO */
+    .hero {
+      min-height: 95vh;
+      background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero h1 { font-size: 3.2rem; color: var(--primary); }
+    .hero p { margin: 25px auto; font-size: 1.25rem; max-width: 900px; }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 35px;
+      background: var(--primary);
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: .3s;
+      box-shadow: 0 0 25px rgba(249,176,0,.5);
+    }
+
+    .btn:hover { background: var(--accent); color: #fff; box-shadow: 0 0 35px rgba(0,198,255,.8); }
+
+    section { padding: 90px 40px; max-width: 1200px; margin: auto; }
+
+    h2 { color: var(--primary); margin-bottom: 40px; text-align: center; font-size: 2.4rem; }
+
+    /* SERVICES */
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 30px; }
+
+    .card {
+      background: linear-gradient(145deg, #1b1b1b, #000);
+      padding: 35px;
+      border-radius: 15px;
+      border-left: 5px solid var(--primary);
+      transition: .3s;
+      box-shadow: 0 10px 25px rgba(0,0,0,.6);
+    }
+
+    .card:hover { transform: translateY(-10px); border-color: var(--accent); }
+
+    /* GALLERY */
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 25px; }
+
+    .gallery div {
+      height: 220px;
+      background: #111;
+      border-radius: 15px;
+      border: 2px dashed var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+
+    /* MISSION */
+    .mv { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); gap: 50px; }
+
+    .mv div { background: var(--gray); padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,.6); }
+
+    /* CONTACT */
+    .contact { background: linear-gradient(90deg, #000, var(--gray)); text-align: center; border-radius: 25px; }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 20px rgba(37,211,102,.8);
+      z-index: 2000;
+    }
+
+    footer { background: #000; text-align: center; padding: 25px; color: #aaa; }
+  </style>
+</head>
+<body>
+
+<header>
+ <div class="logo">
+  <img src="img/logo.png" alt="J.A Topografía y Construcción">
+</div>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Trabajos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div>
+    <h1>Precisión que Construye Confianza</h1>
+    <p>
+      <strong>J.A TOPOGRAFÍA Y CONSTRUCCIÓN S.A.S.</strong> ofrece soluciones profesionales en topografía y construcción,
+      garantizando exactitud, innovación y resultados de alto nivel para cada proyecto.
+    </p>
+    <a href="#contacto" class="btn">Solicita tu Cotización</a>
+  </div>
+</section>
+
+<section id="servicios">
+  <h2>Servicios Especializados</h2>
+  <div class="services">
+    <div class="card">📐 <strong>Levantamientos Topográficos</strong><br>Mediciones precisas para proyectos civiles y rurales.</div>
+    <div class="card">🏗️ <strong>Replanteo de Obras</strong><br>Exactitud total para una correcta ejecución.</div>
+    <div class="card">🚧 <strong>Movimiento de Tierras</strong><br>Control y seguimiento técnico especializado.</div>
+    <div class="card">🛣️ <strong>Topografía Vial</strong><br>Carreteras, accesos y obras de infraestructura.</div>
+    <div class="card">📊 <strong>Curvas de Nivel & Modelos 3D</strong><br>Análisis detallado del terreno.</div>
+    <div class="card">📍 <strong>Delimitación y Linderos</strong><br>Definición exacta de predios.</div>
+    <div class="card">🏢 <strong>Proyectos Urbanos e Industriales</strong><br>Soluciones técnicas integrales.</div>
+    <div class="card">➕ <strong>Y mucho más…</strong><br>Cuéntanos tu proyecto.</div>
+  </div>
+</section>
+
+<section>
+  <h2>¿Por Qué Elegirnos?</h2>
+  <div class="services">
+    <div class="card">🎯 <strong>Precisión Milimétrica</strong><br>Cada medición cuenta.</div>
+    <div class="card">🧰 <strong>Tecnología Profesional</strong><br>Equipos modernos y calibrados.</div>
+    <div class="card">👷‍♂️ <strong>Experiencia Real</strong><br>Obras ejecutadas con éxito.</div>
+    <div class="card">📑 <strong>Cumplimiento Técnico</strong><br>Normas y estándares vigentes.</div>
+    <div class="card">🤝 <strong>Acompañamiento Total</strong><br>Desde el inicio hasta el final.</div>
+    <div class="card">🏆 <strong>Confianza y Seriedad</strong><br>Respaldamos nuestro trabajo.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Solicita tu Cotización</h2>
+  <div class="mv">
+    <div>
+      <form action="https://formsubmit.co/jairoarrieta2009@hotmail.com" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required style="width:100%;padding:15px;margin-bottom:15px;border-radius:10px;border:none;">
+        <input type="email" name="email" placeholder="Correo electrónico" required style="width:100%;padding:15px;margin-bottom:15px;border-radius:10px;border:none;">
+        <input type="tel" name="telefono" placeholder="Teléfono" required style="width:100%;padding:15px;margin-bottom:15px;border-radius:10px;border:none;">
+        <textarea name="mensaje" placeholder="Cuéntanos tu proyecto" rows="5" style="width:100%;padding:15px;border-radius:10px;border:none;"></textarea>
+        <br><br>
+        <button class="btn" type="submit">Enviar Solicitud</button>
+      </form>
+    </div>
+    
+  </div>
+</section>
+
+<section>
+  <h2>Opiniones de Nuestros Clientes</h2>
+  <p style="text-align:center;max-width:900px;margin:0 auto 30px;">Comentarios escritos por clientes reales que han trabajado con nosotros.</p>
+  <div class="services">
+    <div class="card">★★★★★<br>“Trabajo muy profesional y preciso. Cumplieron los tiempos y el replanteo salió perfecto.”<br><br><strong>— Carlos Méndez</strong></div>
+    <div class="card">★★★★★<br>“Excelente atención y acompañamiento durante toda la obra. Recomendados.”<br><br><strong>— Andrea Rodríguez</strong></div>
+    <div class="card">★★★★☆<br>“Resultados exactos y buena comunicación. Volvería a contratarlos sin dudar.”<br><br><strong>— Juan Sebastián López</strong></div>
+  </div>
+
+  <br><br>
+  <h3 style="text-align:center;color:var(--accent)">Deja tu comentario</h3>
+  <p style="text-align:center;font-size:0.9rem;opacity:.8">*Todos los comentarios son revisados y aprobados antes de publicarse*</p>
+  <div class="mv">
+    <div>
+      <form action="https://formsubmit.co/jairoarrieta2009@hotmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo comentario para aprobación">
+        <input type="text" name="nombre" placeholder="Tu nombre" required style="width:100%;padding:15px;margin-bottom:15px;border-radius:10px;border:none;">
+        <select name="calificacion" required style="width:100%;padding:15px;margin-bottom:15px;border-radius:10px;border:none;">
+          <option value="">Calificación</option>
+          <option>★★★★★</option>
+          <option>★★★★☆</option>
+          <option>★★★☆☆</option>
+        </select>
+        <textarea name="comentario" placeholder="Escribe tu experiencia con nuestro servicio" rows="4" required style="width:100%;padding:15px;border-radius:10px;border:none;"></textarea>
+        <br><br>
+        <button class="btn" type="submit">Enviar Comentario</button>
+      </form>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <h2>Trabajos Realizados</h2>
+  <p class="section-subtitle">Más de <strong><span id="contador-proyectos">0</span> proyectos</strong> ejecutados con precisión y profesionalismo</p>
+
+  <div class="gallery" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;">
+
+    <div class="gallery-item"><img src="img/1.jpg" alt="Proyecto" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="img/2.jpg" alt="Proyecto" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="img/3.jpg" alt="Proyecto" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="img/4.jpg" alt="Proyecto" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="img/5.jpg" alt="Proyecto" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="img/6.jpg" alt="Proyecto" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="img/7.jpg" alt="Proyecto" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="img/8.jpg" alt="Proyecto" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="img/9.jpg" alt="Proyecto" onclick="openLightbox(this.src)"></div>
+
+  </div>
+</section>
+
+<!-- CONTADOR -->
+<script>
+  let contador = 0;
+  const objetivo = 80;
+  const velocidad = 20;
+  const span = document.getElementById('contador-proyectos');
+
+  const animarContador = () => {
+    if (contador < objetivo) {
+      contador++;
+      span.textContent = contador + '+';
+      setTimeout(animarContador, velocidad);
+    }
+  };
+
+  window.addEventListener('load', animarContador);
+</script>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<style>
+  .gallery-item{position:relative;overflow:hidden;border-radius:18px;cursor:pointer;animation:fadeUp .8s ease both}
+  .gallery-item img{width:100%;height:230px;object-fit:cover;transition:.5s ease}
+  .gallery-item span{position:absolute;bottom:0;left:0;width:100%;padding:12px;background:rgba(0,0,0,.65);color:#fff;font-weight:600;text-align:center;opacity:0;transition:.4s}
+  .gallery-item:hover img{transform:scale(1.1)}
+  .gallery-item:hover span{opacity:1}
+
+  #lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:999}
+  #lightbox img{max-width:90%;max-height:90%;border-radius:20px}
+
+  @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+</style>
+
+<script>
+  function openLightbox(src){
+    document.getElementById('lightbox').style.display='flex';
+    document.getElementById('lightbox-img').src=src;
+  }
+  function closeLightbox(){
+    document.getElementById('lightbox').style.display='none';
+  }
+</script>
+
+<section id="nosotros">
+  <h2>Perfil Profesional</h2>
+  <div class="mv">
+    <div>
+      <h3 style="color:var(--accent)">Misión</h3>
+      <p>
+        En J.A TOPOGRAFÍA Y CONSTRUCCIÓN S.A.S., nuestra misión es proporcionar servicios de topografía y construcción de la más alta calidad,
+        utilizando tecnología avanzada y un equipo de profesionales altamente capacitados. Nos dedicamos a garantizar el éxito de los proyectos
+        de nuestros clientes mediante soluciones innovadoras y precisas que superan sus expectativas.
+      </p>
+    </div>
+    <div>
+      <h3 style="color:var(--accent)">Visión</h3>
+      <p>
+        Aspiramos a ser la empresa líder en topografía y construcción en la región, reconocida por nuestra precisión, innovación y compromiso con
+        la satisfacción del cliente. Nos esforzamos por establecer nuevos estándares en la industria mediante la excelencia y tecnologías de vanguardia.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto" style="background:linear-gradient(135deg,#0f0f0f,#1f1f1f);color:#f5f5f5;">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:center;">
+    <div>
+      <h2 style="color:var(--primary);font-size:2.6rem;">Contáctanos</h2>
+      <p style="font-size:1.2rem;font-weight:bold;color:#fff;">Haz tu proyecto bien desde el primer metro</p>
+      <p style="opacity:.9;">Asesoría profesional en topografía y construcción, con precisión y confianza.</p>
+      <p style="margin-top:20px;font-size:1.1rem;">📞 <strong>311 423 8346</strong></p>
+      <p style="font-size:1.1rem;">📧 <strong>jairoarrieta2009@hotmail.com</strong></p>
+      <a href="https://w.app/r4gojq" target="_blank" class="btn" style="margin-top:20px;">💬 Escríbenos por WhatsApp</a>
+    </div>
+    <div style="text-align:center;">
+      <img src="img/logo.png" alt="Topografía" style="width:100%;max-width:420px;border-radius:25px;box-shadow:0 20px 40px rgba(0,0,0,.7);">
+    </div>
+  </div>
+</section>
+
+<a class="whatsapp" href="https://w.app/r4gojq" target="_blank">💬 WhatsApp</a>
+
+<footer>
+  © 2026 J.A TOPOGRAFÍA Y CONSTRUCCIÓN S.A.S. | Precisión • Innovación • Confianza
+</footer>
+
+</body>
+</html>
